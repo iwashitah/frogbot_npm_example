@@ -1,4 +1,4 @@
-name: "Frogbot Scan Pull Request"
+name: Frogbot Scan Pull Request
 on:
   pull_request_target:
     types: [ opened, synchronize ]
@@ -25,10 +25,11 @@ jobs:
       - uses: jfrog/frogbot@v2
         with:
           oidc-provider-name: jfrog-github-oidc
+          oidc-audience: jfrog-github
         env:
           JFROG_CLI_LOG_LEVEL: DEBUG
           # JFrog platform URL
-          JF_URL: ${{ secrets.JF_URL }}/
-          JF_PROJECT: "proj1"
+          JF_URL: ${{ vars.JF_URL }}/
+          JF_PROJECT: ${{ vars.JF_PROJECT }}
           # The GitHub token automatically generated for the job
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
