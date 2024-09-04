@@ -24,7 +24,7 @@ jobs:
 
       - uses: jfrog/frogbot@v2
         with:
-          oidc-provider-name: jfrog-github-oidc
+          oidc-provider-name: github-artifactory
         env:
           JFROG_CLI_LOG_LEVEL: DEBUG
           # JFrog platform URL
