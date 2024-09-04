@@ -1,7 +1,7 @@
 name: "Frogbot Scan Pull Request"
 on:
   pull_request_target:
-    types: [opened, synchronize]
+    types: [ opened, synchronize ]
 permissions:
   pull-requests: write
   contents: read
@@ -17,17 +17,19 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+
       #  IMPORTANT:
       #  1. See the following link for information about the tools that need to be installed for Frogbot to work - https://github.com/jfrog/frogbot/tree/master/docs/templates/github-actions/scan-and-fix
       #  2. Some projects require creating a frogbot-config.yml file. Read more about it here - https://github.com/jfrog/frogbot/blob/master/docs/frogbot-config.md
+
       - uses: jfrog/frogbot@v2
         with:
           oidc-provider-name: github-artifactory
-          oidc-audience: jfrog-github
+          # oidc-audience: jfrog-github
         env:
-          # JFROG_CLI_LOG_LEVEL: DEBUG
+          JFROG_CLI_LOG_LEVEL: DEBUG
           # JFrog platform URL
-          JF_URL: ${{ secrets.JF_URL }}/
-          # JF_PROJECT: ${{ vars.JF_PROJECT }}
+          JF_URL: ${{ vars.JF_URL }}/
+          JF_PROJECT: ${{ vars.JF_PROJECT }}
           # The GitHub token automatically generated for the job
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
