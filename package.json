@@ -1,7 +1,7 @@
 {
   "name": "frog-utils",
   "version": "1.0.0",
-  "description": "Add a frog emoji to a given string and do some more frog stuff related 🐸",
+  "description": "x Add a frog emoji to a given string and do some more frog stuff related 🐸",
   "main": "index.js",
   "scripts": {
     "test": "cd tests && jest"
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/iwashitah/create-package-example#readme",
   "dependencies": {
-    "lodash": "1.0.0"
+    "lodash": "4.17.4"
   },
   "devDependencies": {
     "jest": "^29.3.1"
