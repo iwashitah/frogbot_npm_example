@@ -24,7 +24,7 @@ jobs:
         with:
           oidc-provider-name: github-artifactory
         env:
-          JFROG_CLI_LOG_LEVEL: DEBUG
+          # JFROG_CLI_LOG_LEVEL: DEBUG
           # JFrog platform URL
           JF_URL: ${{ secrets.JF_URL }}/
           JF_PROJECT: ${{ vars.JF_PROJECT }}
