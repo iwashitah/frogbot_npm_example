@@ -24,11 +24,11 @@ jobs:
 
       - uses: jfrog/frogbot@v2
         with:
-          oidc-provider-name: github-artifactory
+          oidc-provider-name: github-frogbot
         env:
           JFROG_CLI_LOG_LEVEL: DEBUG
           # JFrog platform URL
           JF_URL: ${{ secrets.JF_URL }}/
-          # JF_PROJECT: ${{ vars.JF_PROJECT }}
+          JF_PROJECT: ${{ vars.JF_PROJECT }}
           # The GitHub token automatically generated for the job
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
