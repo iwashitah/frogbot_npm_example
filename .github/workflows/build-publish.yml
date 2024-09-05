@@ -31,6 +31,6 @@ jobs:
           # JFrog platform URL
           JF_URL: ${{ vars.JF_URL }}
           JF_PROJECT: ${{ vars.JF_PROJECT }}
-          JF_ACCESS_TOKEN: "cmVmdGtuOjAxOjE3NDQxNTY1NDM6RUZ0Z1pkcUVKQ0w2OHV3S3RadUxjdG9jeTZI"
+          JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
           # The GitHub token automatically generated for the job
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
