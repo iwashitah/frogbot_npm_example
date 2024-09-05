@@ -1,14 +1,14 @@
 {
   "name": "frog-utils",
   "version": "1.0.0",
-  "description": "x Add a frog emoji to a given string and do some more frog stuff related 🐸",
+  "description": "Add a frog emoji to a given string and do some more frog stuff related 🐸",
   "main": "index.js",
   "scripts": {
     "test": "cd tests && jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yonarbel/create-package-example.git"
+    "url": "git+https://github.com/iwashitah/create-package-example.git"
   },
   "keywords": [
     "JFrog"
@@ -16,9 +16,9 @@
   "author": "Hirofumi Iwashita5",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yonarbel/create-package-example/issues"
+    "url": "https://github.com/iwashitah/create-package-example/issues"
   },
-  "homepage": "https://github.com/yonarbel/create-package-example#readme",
+  "homepage": "https://github.com/iwashitah/create-package-example#readme",
   "dependencies": {
     "lodash": "4.17.4"
   },
