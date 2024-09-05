@@ -22,7 +22,7 @@ jobs:
       #  2. Some projects require creating a frogbot-config.yml file. Read more about it here - https://github.com/jfrog/frogbot/blob/master/docs/frogbot-config.md
       - uses: jfrog/frogbot@v2
         with:
-          oidc-provider-name: github-artifactory
+          oidc-provider-name: github-artifactory2
           oidc-audience: jfrog-github
         env:
           JFROG_CLI_LOG_LEVEL: DEBUG
