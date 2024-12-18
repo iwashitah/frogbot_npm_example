@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/iwashitah/create-package-example#readme",
   "dependencies": {
-    "lodash": "4.17.4"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "jest": "^29.3.1"
