@@ -34,4 +34,4 @@ jobs:
           JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
           # The GitHub token automatically generated for the job
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          JF_DEPS_REPO: "proj1-npm-virtual"
+          JF_GIT_BASE_BRANCH: ${{ matrix.branch }}
