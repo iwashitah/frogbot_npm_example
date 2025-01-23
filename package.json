@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iwashitah/create-package-example.git"
+    "url": "git+https://github.com/iwashitah/frogbot_npm_example.git"
   },
   "keywords": [
     "JFrog"
@@ -16,9 +16,9 @@
   "author": "Hirofumi Iwashita5",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iwashitah/create-package-example/issues"
+    "url": "https://github.com/iwashitah/frogbot_npm_example/issues"
   },
-  "homepage": "https://github.com/iwashitah/create-package-example#readme",
+  "homepage": "https://github.com/iwashitah/frogbot_npm_example#readme",
   "dependencies": {
     "lodash": "4.17.4"
   },
